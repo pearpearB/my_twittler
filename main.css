@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+	font-family: '고딕';
+	font-weight: normal;
+	font-size: small; 
+	color: #000;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+}
+
+#container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width : 70%;
+}
+#greeting {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width : 100%;
+	height : 200px;
+	font-size: 3em;
+	font-family: serif;
+	font-weight: normal;
+	letter-spacing: .2rem;
+	color: white;
+	background: linear-gradient(to bottom right, rgb(116, 251, 184), rgb(250, 101, 218));
+	text-shadow: 0 0 8px #333;
+	text-align: center;
+}
+#writing-section {
+	background: rgb(239, 197, 252);
+	width: 100%;
+	height: 200px;
+	padding: 15px 10px 15px 10px;
+}
+#username {
+	height : 15%;
+	padding: 0px 0px 10px 0px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+}
+#usernameWriting {
+	width: 150px;
+}
+#message {
+	height : 15%;
+	padding: 10px 0px 20px 0px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+}
+#messageWriting {
+	width: 80%;
+	height : 30%;
+}
+#register {
+	margin: 10px 0px 0px 0px;
+	border-radius: .2em;
+	background-color: rgb(133, 247, 255);
+}
+#list-section {
+	margin: 20px 0px 0px 0px;
+}
+#updateBlue {
+	background: rgb(178, 240, 248);
+	width: 100%;
+	height: 80px;
+	padding: 15px 10px 15px 10px;
+}
+#check-new-tweets {
+	height: 100%;
+	border-radius: .2em;
+	background-color: rgb(133, 247, 255);
+}
+#tweets-list-section {
+	background: rgb(242, 244, 246);
+	list-style: none; /*remove dot!*/
+	padding-left: 0px; /*remove indent!*/
+	margin: 0px 0px 5px 0px;
+}
+.tweets-list {
+	padding: 10px 30px 0px 30px;
+}
+.name-and-date {
+	display: flex;
+	padding: 0px 0px 0px 0px;
+}
+.userName {
+	flex: 8 1 auto;
+	font-weight: bold;
+	font-size: large;
+}
+.createdAt {
+	flex: 2 1 auto;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	font-size: x-small; 
+	color: #7e7d7d;
+	;
+}
+.content {
+	width: 100%;
+	font-size: small; 
+	color: #5c5b5b;
+}
+.tweets-list:after {
+	content: "";
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #a3a3a3;
+	margin: 5px 0px 5px 0px;
+}
